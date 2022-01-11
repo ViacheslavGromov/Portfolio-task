@@ -17,11 +17,13 @@
 
   html {
     scroll-behavior: smooth; 
+    box-sizing:border-box;
   }
 
 body{
     font-family: 'Inter';
-   font-size: 20px;
+    font-size: 20px;
+    letter-spacing: normal;
 }
 body h1, h2, h3, h4, h5, h6{
   font-family: 'Merriweather';
@@ -35,14 +37,11 @@ body h1, h2, h3, h4, h5, h6{
 }
 .container-header{
  
-  height: 910px;
-  width: 1440px;
+  
   background: url('../assets/img/header-bg.jpg');
   background-repeat: no-repeat;
   background-position: center 0;
 
-  
-  
 }
 .header{
  
@@ -74,8 +73,6 @@ body h1, h2, h3, h4, h5, h6{
 }
 
 
-
-
 .header__navigation{
   margin-left: auto;
 }
@@ -88,7 +85,7 @@ body h1, h2, h3, h4, h5, h6{
 
 .navigation__link{
   padding: 0 15px;
-  line-height: 50px;
+  
   
 }
 
@@ -110,6 +107,7 @@ body h1, h2, h3, h4, h5, h6{
   background-color: #000000;
   padding: 0;
   
+  
 }
 
 .header__language span{
@@ -122,10 +120,59 @@ body h1, h2, h3, h4, h5, h6{
 }
 .header__language-btn_passive, .logo{
   color:#ffffff;
+  cursor: pointer;
 }
 
+/* ***************
+*****HERO*******
+**************** */
 
+.hero-container {
+  width: 1440px;
+  height: 820px;
+  background-image: url('../assets/img/header-bg.jpg');
+  background-position: center -90px;
+  background-repeat: no-repeat;
+}
 
+.hero h1{
+  padding-bottom: ;: 0;
+  margin-bottom: 0;
+}
+
+.hero{
+  padding-top: 145px;
+  padding-left: 80px;
+  width: 550px;
+  height: 330px ;
+  color:#ffffff;
+}
+
+.hero h1{
+  font-size: 60px;
+}
+
+.hero p{
+  padding: 15px 0 6px 0;
+  width: 470px;
+  height: 120px;
+  line-height: 40px;
+  /* letter-spacing: 1.1px; */
+}
+
+.main__button{
+  width: 220px;
+  height: 55px;
+  background-color:#bdae82;
+  color:#000000;
+}
+
+.main__button:hover{
+  color:#ffffff;
+  transition: 0.5s;
+  cursor: pointer;
+
+}
 
 
 
