@@ -30,10 +30,13 @@ body h1, h2, h3, h4, h5, h6{
   font-weight: 700;
 }
 
+
+
 .container {
   width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
+  background-color:#000000;
 }
 .container-header{
  
@@ -165,6 +168,7 @@ body h1, h2, h3, h4, h5, h6{
   height: 55px;
   background-color:#bdae82;
   color:#000000;
+  font-family: inherit;
 }
 
 .main__button:hover{
@@ -173,6 +177,140 @@ body h1, h2, h3, h4, h5, h6{
   cursor: pointer;
 
 }
+
+/* ****************88
+******SKILSS*******
+******************* */
+
+
+
+
+
+.section__title{
+  text-align: center;
+  font-size: 40px;
+  margin-top: 0;
+  position: absolute;
+  padding: 0 20px;
+  color:#bdae82;
+  background-color:#000000;
+}
+
+
+.wrapper__h2{
+  
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+}
+
+.wrapper__h2::before{
+  content: '';
+  display: block;
+  width: 49%;
+  height: 2px;
+  background-color: #bdae82;
+  position: absolute;
+  top: 20px;
+}
+
+/*  working version of line h2 before,after
+
+ .wrapper{
+  width: 50%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.section__title{
+  text-align: center;
+  color: #bdae82;
+  font-size: 40px;
+
+}
+
+.section__title::before{
+  content:"";
+  display: block;
+height: 1px;
+background-color: #BDAE82;
+position: absolute;
+top: 50%;
+left: 1.5%;
+width: 38%;
+}
+
+.section__title::after{
+  content:"";
+  display: block;
+  height: 1px;
+  background-color: #BDAE82;
+  position: absolute;
+  top: 50%;
+  right: 1.5%;
+  width: 38%;
+} */
+
+.skills{
+  padding-top: 118px;
+}
+
+
+.skills-items{
+  padding-top: 120px;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color:#ffffff;
+}
+.skills-items__item {
+  display: block;
+  text-align: center;
+  background-position: center top;
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 240px;
+  padding-top: 85px;
+
+}
+
+.skills-items__item p{
+  margin: 0 auto;
+  line-height: 38px;
+  letter-spacing: -0.9px;
+  width: 280px;
+  height: 72px;
+  
+}
+
+.skills-items__item h4{
+  font-family:  Inter;
+  
+}
+
+
+
+.skills-items__item:nth-child(1) {
+  background-image: url('../assets/svg/camera.svg');
+  background-size: 62px 50px;
+}
+.skills-items__item:nth-child(2) {
+  background-image: url('../assets/svg/video.svg');
+  background-size: 66px 50px;
+}
+.skills-items__item:nth-child(3) {
+  background-image: url('../assets/svg/retouch.svg');
+  background-size: 66px 50px;
+}
+.skills-items__item:nth-child(4) {
+  background-image: url('../assets/svg/audio.svg');
+  background-size: 32px 50px;
+}
+
 
 
 
