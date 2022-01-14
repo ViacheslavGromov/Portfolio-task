@@ -320,11 +320,10 @@ width: 38%;
 
 .skills-items__item p{
   margin: 0 auto;
-  
-  line-height: 38px;
-  letter-spacing: -0.9px;
+  font-size: 18px;
+  line-height: 36px;
   width: 280px;
-  height: 72px; */
+  height: 72px; 
    
 }
 
@@ -376,6 +375,53 @@ width: 38%;
   width: 1400px;
   height: 1145px;
 } 
+
+/* *********************
+*********VIDEO************
+************************ */
+
+.video{
+  padding-top: 118px;
+  height: 945px;
+
+}
+
+.video__player{
+  
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../assets/img/video-player__bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width:100%;
+  margin-top: 60px;
+}
+
+.video__button{
+   position: absolute;
+   display: block;
+   background-image: url(../assets/img/video__button.svg);
+   background-color: transparent;
+   height: 130px;
+   width: 130px;
+   border:none;
+  
+  }
+  .video__button:hover ~.video__player{
+    -webkit-filter: blur(8px);
+  }
+
+
+  .video__button:hover{
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+    transition: 0.5s;
+    cursor: pointer;
+    
+  }
 
 
 
