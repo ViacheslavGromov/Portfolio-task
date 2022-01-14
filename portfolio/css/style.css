@@ -410,11 +410,7 @@ width: 38%;
    border:none;
   
   }
-  .video__button:hover ~.video__player{
-    -webkit-filter: blur(8px);
-  }
-
-
+  
   .video__button:hover{
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     contrast(87%);
@@ -422,6 +418,68 @@ width: 38%;
     cursor: pointer;
     
   }
+
+/* ***********************
+***********PRICE**********
+*********************** */
+
+.price {
+  padding-top: 116px;
+  width: 1400px;
+  height: 845px;
+}
+
+
+
+.price__items {
+  padding-top: 125px;
+  display: flex;
+  justify-content: space-between;
+
+
+  
+}
+
+.price__item{
+  border: 2px solid #bdae82;
+  width: 450px;
+  height: 505px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.price__h3 {
+  
+  color: #ffffff;
+  
+  font-size: 28px;
+  line-height: 56px;
+  padding-top: 12px;
+
+}
+
+.price__h4 {
+  
+  font-size: 25px;
+  color: #bdae82;
+  margin: 0;
+  padding-bottom: 31px;
+}
+.price__item span{
+  
+ 
+  display: block;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 36px;
+ 
+}
+
+.price__button{
+ margin-top: 9%;
+}
 
 
 
