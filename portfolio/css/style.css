@@ -489,8 +489,8 @@ width: 38%;
   display: flex;
   justify-content: flex-end;
   background-image: url(../assets/img/contacts__bg.jpg);
-  background-repeat:no repeat;
-  background-position:center;
+  background-repeat:no-repeat;
+  background-position:center center;
   width: 1440px;
   height: 700px;
   margin: 0 auto;
@@ -554,6 +554,62 @@ width: 38%;
   color: #bdae82;
   
 }
+
+/* **************
+*******FOOTER******
+********************** */
+.footer__content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  height: 150px;
+}
+
+.footer__content a{
+  text-decoration: none;
+  color:#ffffff;
+  
+}
+
+.footer__content span{
+  padding: 0 15px;
+}
+
+.footer__content a:hover{
+  
+  color: #bdae82;
+  transition: .5s;
+}
+
+.footer__link-RS{
+  padding-left: 16px;
+}
+
+.footer ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 188px;
+  gap: 20px;
+  padding: 0;
+}
+
+
+
+
+
+.footer__social-link img{
+  width: 32px;
+  height: 32px;
+}
+
+.footer__social-link img:hover{
+   filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+      contrast(87%);
+      transition: .5s;
+  }
+
 
 
 
