@@ -27,31 +27,24 @@ body{
     font-family: 'Inter';
     font-size: 20px;
     letter-spacing: normal;
+    background-color:#000000;
 }
 body h1, h2, h3, h4, h5, h6{
   font-family: 'Merriweather';
   font-weight: 700;
 }
 
-
-
 .container {
-  
   width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
   background-color:#000000;
 }
+
 .container-header{
- 
-  
   background: url('../assets/img/header-bg.jpg');
   background-repeat: no-repeat;
   background-position: center 0;
-
-}
-.header{
- 
 }
 
 .header-content{
@@ -76,25 +69,28 @@ body h1, h2, h3, h4, h5, h6{
     contrast(87%);
 }
 
+.logo:active{
+  filter: invert(26%) sepia(1%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+}
+
 .header__navigation{
   margin-left: auto;
 }
+
 .navigation{
   display: flex;
   list-style-type: none;
   padding-right: 15px;
- 
 }
 
 .navigation__link{
   padding: 0 15px;
-   
 }
 
 .navigation__link a{
   text-decoration: none;
   color: #ffffff;
-  
 }
 
 .navigation__link a:hover{
@@ -102,11 +98,14 @@ body h1, h2, h3, h4, h5, h6{
   transition: 0.5s;
 }
 
+.navigation__link a:active{
+  color:#bdbdbd;
+}
+
 .header button{
   border:none;
   background-color: #000000;
   padding: 0;
-
 }
 
 .header__language span{
@@ -117,11 +116,22 @@ body h1, h2, h3, h4, h5, h6{
 .header__language-btn_active{
   color:#bdae82;
 }
+
+.header__language-btn_active:hover{
+  cursor: pointer;
+  color:#bdbdbd;
+}
 .header__language-btn_passive, .logo{
   color:#ffffff;
   cursor: pointer;
 }
-
+.header__language-btn_passive:hover{
+  color:#bdae82;
+  transition: .5s;
+}
+.header__language-btn_passive:active{
+  color:#bdbdbd;
+}
 /* ***************
 *****HERO*******
 **************** */
@@ -175,6 +185,10 @@ body h1, h2, h3, h4, h5, h6{
   cursor: pointer;
 
 }
+.main__button:active{
+  color:#000000;
+  transition: 1s;
+}
 
 .main__button_hidden{
   width: 220px;
@@ -191,11 +205,15 @@ body h1, h2, h3, h4, h5, h6{
   cursor: pointer;
 }
 
+.main__button_hidden:active{
+  color:#bdae82;
+}
 
 
 /* ****************************
 ******STYLES FOR H2 and line for it*
 *************************** */
+
 
 .section__title{
   text-align: center;
@@ -212,7 +230,6 @@ body h1, h2, h3, h4, h5, h6{
   position: relative;
   display: flex;
   justify-content: center;
-
 }
 
 .wrapper__h2::before{
@@ -224,6 +241,7 @@ body h1, h2, h3, h4, h5, h6{
   position: absolute;
   top: 1.1em;
 }
+
 
 /*  working version of line h2 before,after
 
@@ -247,8 +265,7 @@ body h1, h2, h3, h4, h5, h6{
   width: 100%;
   background: #bdae82;
 }
-+ span in html, padding 0 20px backgrcol black
-
++ span in html,for it padding 0 20px background-color black
 
  */
 
@@ -288,7 +305,6 @@ width: 38%;
   width: 38%;
 } */ 
 
-
 /* ****************88
 ******SKILSS*******
 ******************* */
@@ -298,7 +314,6 @@ width: 38%;
   padding-top: 118px;
   height: 482px;
 }
-
 
 .skills-items{
   padding-top: 122px;
@@ -323,13 +338,11 @@ width: 38%;
   font-size: 18px;
   line-height: 36px;
   width: 280px;
-  height: 72px; 
-   
+  height: 72px;  
 }
 
 .skills-items__item h4{
   font-family:  Inter;
-  
 }
 
 .skills-items__item:nth-child(1) {
@@ -363,7 +376,6 @@ width: 38%;
   justify-content: center;
   padding-top: 122px;
   gap: 5px;
-
 }
 
 .portfolio-images{
@@ -383,11 +395,9 @@ width: 38%;
 .video{
   padding-top: 118px;
   height: 945px;
-
 }
 
 .video__player{
-  
   position: relative;
   display: flex;
   justify-content: center;
@@ -408,7 +418,6 @@ width: 38%;
    height: 130px;
    width: 130px;
    border:none;
-  
   }
   
   .video__button:hover{
@@ -418,7 +427,14 @@ width: 38%;
     cursor: pointer;
     
   }
+  .video__button:active{
+    filter: invert(26%) sepia(1%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+    transition: 0.5s;
+    cursor: pointer;
+  }
 
+  
 /* ***********************
 ***********PRICE**********
 *********************** */
@@ -429,15 +445,11 @@ width: 38%;
   height: 845px;
 }
 
-
-
 .price__items {
   padding-top: 125px;
   display: flex;
   justify-content: space-between;
 
-
-  
 }
 
 .price__item{
@@ -447,7 +459,6 @@ width: 38%;
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .price__h3 {
@@ -457,11 +468,9 @@ width: 38%;
   font-size: 28px;
   line-height: 56px;
   padding-top: 12px;
-
 }
 
-.price__h4 {
-  
+.price__h4 { 
   font-size: 25px;
   color: #bdae82;
   margin: 0;
@@ -469,7 +478,6 @@ width: 38%;
 }
 .price__item span{
   
- 
   display: block;
   color: #ffffff;
   font-size: 18px;
@@ -481,9 +489,11 @@ width: 38%;
  margin-top: 9%;
 }
 
+
 /* **************88
 **********Contacts*****
 *********************** */
+
 
 .contacts {
   display: flex;
@@ -493,17 +503,14 @@ width: 38%;
   background-position:center center;
   width: 1440px;
   height: 700px;
-  margin: 0 auto;
-  
+  margin: 0 auto; 
 }
 
 .contacts__title{
   padding: 0;
   background-color: transparent;
-  
   line-height: 80px;
   
- 
 }
 
 .contacts__content {
@@ -512,12 +519,10 @@ width: 38%;
   width: 450px;
   height: 445px;
   
-  
 }
 
 .contacts__content form{
   padding-top: 120px;
-  
 }
 
 .contacts__content input{
@@ -550,14 +555,32 @@ width: 38%;
 
 .contacts input::placeholder, 
 .contacts textarea::placeholder{
- 
+
   color: #bdae82;
-  
 }
+
+ input:focus,
+ textarea:focus{
+  background-color:#000000;
+}
+
+input:active,
+textarea:active{
+  border: 1px solid #ffffff ;
+}
+
+input:hover,
+textarea:hover{
+  border: 1px solid #ffffff ;
+  transition: .5s;
+}
+
 
 /* **************
 *******FOOTER******
 ********************** */
+
+
 .footer__content{
   display: flex;
   justify-content: space-between;
@@ -581,6 +604,10 @@ width: 38%;
   color: #bdae82;
   transition: .5s;
 }
+.footer__content a:active{
+  
+  color: #ffffff;
+}
 
 .footer__link-RS{
   padding-left: 16px;
@@ -595,10 +622,6 @@ width: 38%;
   padding: 0;
 }
 
-
-
-
-
 .footer__social-link img{
   width: 32px;
   height: 32px;
@@ -609,6 +632,12 @@ width: 38%;
       contrast(87%);
       transition: .5s;
   }
+
+  .footer__social-link img:active{
+    filter: invert(26%) sepia(1%) saturate(638%) hue-rotate(7deg) brightness(92%)
+       contrast(87%);
+       transition: .5s;
+   }
 
 
 
