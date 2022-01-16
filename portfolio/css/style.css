@@ -733,13 +733,129 @@ textarea:hover{
   /* mar-bot put down button */
   
 
+  /* *******section__title H2*** */
+
+  .section__title{
+    font-size: 32px;
+  }
+
+  .wrapper__h2::before{
+    width: 47%;
+    top: 0.81em;
+  }
+
+/* ******Skills**** */
+
+  .skills{
+    padding-top: 12px;
+  }
+
+  .skills-items {
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 102px 75px 0 69px;
+      
+   }
+  .skills h4{
+    padding-top: 7px;
+  }
+
+  .skills p{
+    line-height: 22px;
+    padding-top: 29px;
+  }
+
+  /* ******Portfolio***** */
+
+  .portfolio {
+    padding-top: 41px;
+  }
+
+  .portfolio__buttons {
+
+    padding-top: 108px;
+    max-width: 445px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+  }
+
+  /* ****Video *****/
+
+  .video {
+    padding-top: 103px;
+    max-height: 548px;
+  }
+
+.video__player{
+    max-height: 418px;
+    margin-top: 107px;
+    background-image: url('../assets/img/video-player__bg_small.jpg');
+}
+
+.video__button{
+  background-position: 0px 3px;
+  background-size: auto 65px;
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 70px;
+}
+
+/* ***PRICE***** */
+
+.price {
+  padding-top: 182px;
+  height: 1905px;
   
+}
+
   
+ 
+
+   .price__items {
+    padding-top: 108px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    
+  } 
+
+  .price__item {
+    width: 420px;
+
+  }
+  .price__h3 {
+    padding-top: 41px;
+  }
+
+  .price__h4 {
+    padding-top: 31px;
+}
+
+.price span{
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 }
+
+
+
+
+
   
 
 
