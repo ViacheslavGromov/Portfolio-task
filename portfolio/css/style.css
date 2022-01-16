@@ -314,7 +314,7 @@ width: 38%;
   margin: 0 auto;
   padding-top: 118px;
   height: 482px;
-  
+  max-width: 1440px;
 
 }
 
@@ -322,9 +322,10 @@ width: 38%;
   padding: 122px 20px 0 20px;
   display: flex;
   justify-content: space-between;
-  gap: 40px;
+  /* gap: 40px; */
   flex-wrap: wrap;
   color:#ffffff;
+  
 
   
 }
@@ -659,9 +660,96 @@ textarea:hover{
    ******************** */
 
  
-    @media (max-width: 440px) {
-     
+    @media (max-width: 1440px) {
+      .portfolio-images {
+        justify-content: center;
     }
+  }
+
+  @media (max-width: 1220px) {
+
+    .skills{
+      height: 700px;
+    }
+    .skills-items{
+        padding: 122px 20px 0 20px;
+        display: flex;
+        justify-content: space-around;
+        gap: 40px;
+        flex-wrap: wrap;
+        color: #ffffff;
+        max-width: 949px;
+        margin: 0 auto;
+    }
+  }
+
+
+
+@media (max-width: 768px){
+
+  /* *****Header******* */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.navigation{
+  display: none;
+}
+
+  .container{
+    padding: 0;
+    max-width: 768px;
+  }
+
+  .container-header{
+    
+    background-position: -5px -30px;
+    background-size: auto 620px;
+  }
+
+  .hero{
+    padding-top: 56px;
+  }
+
+  .hero-container{
+    height: 590px;
+    background-position: -5px -120px;
+    background-size: auto 620px;
+  }
+
+  .hero h1{
+    font-size: 31px;
+    line-height: 64px;
+  }
+
+  .hero p{
+    padding-top: 21px;
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 390px;
+    margin-bottom: 33px;
+  }
+  /* mar-bot put down button */
+  
+
+  
+  
+
+
+
+
+}
+  
+
+
+
+  
+
+
+
+
+}
 
 
 
