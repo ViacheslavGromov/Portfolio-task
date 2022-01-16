@@ -35,7 +35,7 @@ body h1, h2, h3, h4, h5, h6{
 }
 
 .container {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
   background-color:#000000;
@@ -152,7 +152,7 @@ body h1, h2, h3, h4, h5, h6{
 .hero{
   padding-top: 145px;
   padding-left: 60px;
-  width: 550px;
+  max-width: 550px;
   height: 330px ;
   color:#ffffff;
 }
@@ -163,7 +163,7 @@ body h1, h2, h3, h4, h5, h6{
 
 .hero p{
   padding-top: 15px;
-  width: 470px;
+  max-width: 470px;
   height: 120px;
   line-height: 40px;
   margin-bottom: 41px;
@@ -311,23 +311,29 @@ width: 38%;
 
 
 .skills{
+  margin: 0 auto;
   padding-top: 118px;
   height: 482px;
+  
+
 }
 
 .skills-items{
-  padding-top: 122px;
+  padding: 122px 20px 0 20px;
   display: flex;
   justify-content: space-between;
+  gap: 40px;
   flex-wrap: wrap;
   color:#ffffff;
+
+  
 }
 .skills-items__item {
   display: block;
   text-align: center;
   background-position: center top;
   background-repeat: no-repeat;
-  width: 320px;
+  max-width: 320px;
   height: 240px;
   padding-top: 83px;
 
@@ -335,9 +341,10 @@ width: 38%;
 
 .skills-items__item p{
   margin: 0 auto;
+  padding-top: 2px;
   font-size: 18px;
   line-height: 36px;
-  width: 280px;
+  max-width: 280px;
   height: 72px;  
 }
 
@@ -368,7 +375,9 @@ width: 38%;
 
 .portfolio{
   padding-top: 118px;
-  height: 1500px;
+  max-width:1440px;
+ 
+
 }
 
 .portfolio__buttons{
@@ -384,9 +393,13 @@ width: 38%;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 25px;
-  width: 1400px;
-  height: 1145px;
+  max-width: 1400px;
+  
 } 
+
+.portfolio-images img{
+  
+}
 
 /* *********************
 *********VIDEO************
@@ -395,6 +408,7 @@ width: 38%;
 .video{
   padding-top: 118px;
   height: 945px;
+  max-width: 1440px;
 }
 
 .video__player{
@@ -405,9 +419,9 @@ width: 38%;
   background-image: url(../assets/img/video-player__bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  height: 100%;
-  width:100%;
-  margin-top: 60px;
+  height: 705px;
+  max-width: 1400px;
+  margin-top: 122px;
 }
 
 .video__button{
@@ -441,7 +455,7 @@ width: 38%;
 
 .price {
   padding-top: 116px;
-  width: 1400px;
+  max-width: 1400px;
   height: 845px;
 }
 
@@ -501,7 +515,7 @@ width: 38%;
   background-image: url(../assets/img/contacts__bg.jpg);
   background-repeat:no-repeat;
   background-position:center center;
-  width: 1440px;
+  max-width: 1440px;
   height: 700px;
   margin: 0 auto; 
 }
@@ -509,7 +523,7 @@ width: 38%;
 .contacts__title{
   padding: 0;
   background-color: transparent;
-  line-height: 80px;
+  padding-top: 17px;
   
 }
 
@@ -638,6 +652,17 @@ textarea:hover{
        contrast(87%);
        transition: .5s;
    }
+
+
+   /* ***************
+   *******MEDIA*******8
+   ******************** */
+
+ 
+    @media (max-width: 440px) {
+     
+    }
+
 
 
 
