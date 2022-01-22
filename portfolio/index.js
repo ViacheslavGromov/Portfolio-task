@@ -3,3 +3,10 @@ function score(){
 };
 
 score();
+
+(function () {
+    const burgerItem = document.querySelector('.burger');
+    burgerItem.addEventListener('click', () =>{
+        console.log(123);
+    })
+}());
