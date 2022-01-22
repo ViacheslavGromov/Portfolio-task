@@ -119,7 +119,8 @@ body h1, h2, h3, h4, h5, h6{
 
 .header__language-btn_active:hover{
   cursor: pointer;
-  color:#bdbdbd;
+  color:#ffffff;
+  transition: .5s;
 }
 .header__language-btn_passive, .logo{
   color:#ffffff;
@@ -129,7 +130,8 @@ body h1, h2, h3, h4, h5, h6{
   color:#bdae82;
   transition: .5s;
 }
-.header__language-btn_passive:active{
+.header__language-btn_passive:active, 
+.header__language-btn_active:active{
   color:#bdbdbd;
 }
 /* ***************
@@ -304,6 +306,11 @@ width: 38%;
   right: 1.5%;
   width: 38%;
 } */ 
+
+/* another variant with gradient(easier))
+.section-title {
+  background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
+}*/
 
 /* ****************88
 ******SKILSS*******
@@ -687,20 +694,28 @@ textarea:hover{
 
 @media (max-width: 768px){
 
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  .container{
+    padding: 0;
+    max-width: 768px;
+    
+  }
+
+
   /* *****Header******* */
-*{
-  margin: 0;
-  padding: 0;
+
+.header-content {
+  padding: 0 60px;
 }
 
 .navigation{
   display: none;
 }
-
-  .container{
-    padding: 0;
-    max-width: 768px;
-  }
 
   .container-header{
     
@@ -804,14 +819,12 @@ textarea:hover{
 
 /* ***PRICE***** */
 
-.price {
-  padding-top: 182px;
-  height: 1905px;
+  .price {
+    padding-top: 182px;
+    height: 1905px;
   
-}
+  }
 
-  
- 
 
    .price__items {
     padding-top: 108px;
@@ -834,22 +847,101 @@ textarea:hover{
     padding-top: 31px;
 }
 
-.price span{
+/* *********CONTACTS *******/
+
+ .contacts {
+
+    margin-top: 78px;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    max-width: 1440px;
+    height: 700px;
+    height: 600px;
+    background-position: -236px 0px;
+    background-size: auto 603px;
+}
+
+.contacts__title {
+  padding: 31px 0 0 134px;
+}
+
+.contacts__content{
+  margin: 0;
+  padding-top: 45px;
+  text-align: center;
+}
+
+/* ***FOOTER**** */
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-top: 31px;
+  max-height: 134px;
+}
+
+.footer__link-RS {
+  padding: 17px 0 0 0;
+}
+
+.footer ul{
+  padding-top: 29px;
+}
+
 }
 
 
+@media (max-width: 740px){
+
+  .container-header {
+    background-position: -200px -30px;
+    background-size: auto 620px;
+}
+
+  .hero-container {
+    height: 590px;
+    background-position: -200px -120px;
+    background-size: auto 620px;
+}
+
+  .skills{
+    min-height: 1100px;
+  }
+
+  .skills-items{
+    justify-content: center;
+  }
+}
 
 
+@media (max-width: 480px){
 
+  .container{
+    padding: 0;
+    max-width: 480px;
+  }
 
+.contacts input{
+  width:260px;
+}
 
+.contacts textarea{
+  width: 260px;
+}
 
+.contacts__content{
+  padding: 0;
+  max-width: 320px;
+}
 
+.contacts__title {
+  padding: 60px 0 0 40px;
+}
 
-
-
-
-
+.portfolio-images img {
+  max-width: 260px;
 }
 
 
@@ -865,7 +957,7 @@ textarea:hover{
 
 
 
-}
+
 
 
 
