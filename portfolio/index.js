@@ -4,34 +4,50 @@ function score(){
 
 score();
 
-// новая версия
+// new version burger
 
-(function () {
-        const burger = document.querySelector('.burger');
-        const nav = document.querySelector('.header__navigation');
-        const body = document.querySelector('.body__menu-active');
-     
-        burger.addEventListener('click', () => {
-           nav.classList.toggle('header__nav_active');
-           burger.classList.toggle('open');
-           body.classList.toggle('navigation__shadow');
-        });
-     
-        const navLinks = document.querySelectorAll('.navigation__link');
-     
-        function closeMenu(event){
-           if (event.target.classList.contains('navigation__link')) {
-              nav.classList.remove('header__nav_active');
-              burger.classList.remove('open');
-              body.classList.remove('navigation__shadow');
-           }
+     const burger = document.querySelector('.burger');
+     const nav = document.querySelector('.header__navigation');
+     const body = document.querySelector('.body__menu-active');
+
+     burger.addEventListener('click', () => {
+        nav.classList.toggle('header__nav_active');
+        burger.classList.toggle('open');
+        body.classList.toggle('.navigation__shadow');
+     });
+
+     const navLinks = document.querySelectorAll('.navigation__link');
+
+     function closeMenu(event){
+        if (event.target.classList.contains('navigation__link')) {
+           nav.classList.remove('header__nav_active');
+           burger.classList.remove('open');
+           body.classList.remove('navigation__shadow');
         }
-        
-        navLinks.forEach((el) => el.addEventListener('click', closeMenu));
-           
-     }())
+     }
 
-// закомиченная рабочая версия   (function () {
+     navLinks.forEach((el) => el.addEventListener('click', closeMenu));
+
+
+// portfolio func
+const portfolioBtns = document.querySelector('.portfolio__buttons');
+const portfolioImages = document.querySelectorAll('.portfolio__image');
+
+function changeImage(event) {
+   if (event.target.classList.contains('main__button_hidden')) { 
+    portfolioImages.forEach((img, index) => img.src = 
+    `assets/img/${event.target.dataset.season}/${index + 1}.jpg`);
+   }
+}
+
+portfolioBtns.addEventListener('click', changeImage);
+
+
+
+
+
+
+// commited working version burger  (function () {
 //     const burgerItem = document.querySelector('.burger');
 //     const menu = document.querySelector('.header__navigation');
 //     const menuCloseItem = document.querySelector('.header__nav-close');
@@ -50,27 +66,3 @@ score();
 //         }
 //     }
 // }());
-
-   // Burger handler не все пункты выполняет
-
-    /* Получение необходимых для реализации адаптивного 
-    меню элементов по классам */
-
-// const burgerIcon = document.querySelector('.burger');
-// const menu = document.querySelector('.adaptive-menu');
-// const navList = document.querySelector('.nav-list');
-
-    /* Открыть / закрыть меню кликом по иконке */
-
-// burgerIcon.addEventListener('click', () => {
-//     menu.classList.toggle('open');
-// });
-
-    /* Закрыть меню при клике по ссылке */
-
-// navList.addEventListener('click', (event) => {
-//     if (event.target.classList.contains('nav-link')) {
-//         menu.classList.remove('open');
-//     }
-// });
-
