@@ -194,7 +194,7 @@ body h1, h2, h3, h4, h5, h6{
   transition: 1s;
 }
 
-.main__button_hidden{
+.portfolio__button_hidden{
   width: 220px;
   height: 55px;
   background-color: #000000;
@@ -203,13 +203,13 @@ body h1, h2, h3, h4, h5, h6{
   border:1px solid #bdae82; 
 }
 
-.main__button_hidden:hover{
+.portfolio__button_hidden:hover{
   color:#ffffff;
   transition: 0.5s;
   cursor: pointer;
 }
 
-.main__button_hidden:active{
+.portfolio__button_hidden:active{
   color:#bdae82;
 }
 
@@ -407,10 +407,40 @@ width: 38%;
   
 } 
 
-.portfolio-images img{
+.portfolio__button_hidden.active{
+  border:none;
+  width: 220px;
+  height: 55px;
+  background-color:#bdae82;
+  color:#000000;
+  font-family: inherit;
+}
+
+.portfolio__button_hidden.active:hover{
+  color:#ffffff;
   
 }
 
+.portfolio__button_active{
+  border:none;
+  width: 220px;
+  height: 55px;
+  background-color:#bdae82;
+  color:#000000;
+  font-family: inherit;
+}
+
+
+.portfolio__button_active{
+  color:#ffffff;
+  transition: 0.5s;
+  cursor: pointer;
+
+}
+.portfolio__button_active{
+  color:#000000;
+  transition: 1s;
+}
 /* *********************
 *********VIDEO************
 ************************ */
