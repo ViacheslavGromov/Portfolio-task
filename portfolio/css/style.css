@@ -104,7 +104,8 @@ body h1, h2, h3, h4, h5, h6{
 
 .header button{
   border:none;
-  background-color: #000000;
+  outline:none;
+  background-color: Transparent;
   padding: 0;
 }
 
@@ -113,29 +114,33 @@ body h1, h2, h3, h4, h5, h6{
   padding: 0 5px;
 }
 
-.header__language-btn_active{
-  color:#bdae82;
+
+
+.header__btn-en{
+  color:#ffffff;
 }
 
-.header__language-btn_active:hover{
+.header__btn-en:hover{
   cursor: pointer;
   color:#ffffff;
   transition: .5s;
 }
-.header__language-btn_passive, .logo{
+.header__btn-ru, .logo{
   color:#ffffff;
   cursor: pointer;
 }
-.header__language-btn_passive:hover{
+.header__btn-ru:hover{
   color:#bdae82;
   transition: .5s;
 }
-.header__language-btn_passive:active, 
-.header__language-btn_active:active{
+.header__btn-ru:active, 
+.header__btn-en:active{
   color:#bdbdbd;
 }
 
-
+.header__btn.active{
+  color:#bdae82;
+}
 /* ***************
 *****HERO*******
 **************** */
@@ -745,9 +750,10 @@ textarea:hover{
 
 .header__language{
   margin-left: auto;
+  padding-right: 23px;
 }
 
-.header__language-btn_passive{
+.header__btn-ru{
   padding-right: 20px;
   padding-left: 10px;
 }
