@@ -1,12 +1,8 @@
 import i18Obj from './translate.js';
 
-function score(){
-   console.log('Смена изображений в секции portfolio +20\n кнопка, по которой кликнули, становится активной т.е. выделяется стилем. Другие кнопки при этом будут неактивными +5\n при клике по надписи ru англоязычная страница переводится на русский язык +10\n при клике по надписи en русскоязычная страница переводится на английский язык +10\n надписи en или ru, соответствующие текущему языку страницы, становятся активными т.е. выделяются стилем +5 \n Переключение светлой и тёмной темы +0 " не получилось, еле-еле эти 2 пункта сделал:(( ушел учить теорию. Посоветуй пожалуйста источники где можно подтянуть мои огромные пробелы в js, заранее спасибо"');
-};
 
-score();
 
-// new version burger
+// burger
 
      const burger = document.querySelector('.burger');
      const nav = document.querySelector('.header__navigation');
@@ -40,20 +36,20 @@ function changeImage(event) {
     portfolioImages.forEach((img, index) => img.src = 
     `assets/img/${event.target.dataset.season}/${index + 1}.jpg`);
    }
+   toggleActivePortfolioBtn(event);
 }
 
 portfolioBtns.addEventListener('click', changeImage);
 
 // portfolio btns
+const activePortfolioBtn = [...document.querySelectorAll('.portfolio__button_hidden')];
 
-let activePortfolioBtn = document.querySelectorAll('.portfolio__button_hidden');
-activePortfolioBtn.forEach(portfolio__button_hidden => {
-   portfolio__button_hidden.addEventListener('click', function () {
-      activePortfolioBtn.forEach(btn => btn.classList.remove('active'));
-      this.classList.add('active');
-   })
-})
-
+const toggleActivePortfolioBtn = (event) => {
+   activePortfolioBtn.forEach((elements) => {
+      elements.classList.remove('active');
+   });
+   event.target.classList.add('active')
+}
 
 // change lng
 
@@ -65,7 +61,7 @@ function getTranslate(lang) {
    text.forEach((elements) => {
       elements.textContent = i18Obj[lang][elements.dataset.i18];
    })
-
+   toogleActiveLangBtn(event)
 }
 
 langRu.addEventListener('click', () => {
@@ -74,14 +70,16 @@ langRu.addEventListener('click', () => {
  langEn.addEventListener('click', () => {
    getTranslate('en');
  })
-
- let activeBtn = document.querySelectorAll('.header__btn');
- activeBtn.forEach(header__btn => {
-   header__btn.addEventListener('click', function () {
-      activeBtn.forEach(btn => btn.classList.remove('active'));
-       this.classList.add('active');
-    })
- })
-
  
+// lang btn
+
+const activeLangBtn = [...document.querySelectorAll('.header__btn')];
+
+const toogleActiveLangBtn = (event) => {
+   activeLangBtn.forEach((elements) => {
+      elements.classList.remove('active');
+   });
+   event.target.classList.add('active');
+}
+
 //  change theme
